@@ -31,4 +31,6 @@ jobs:
 
       - name: "Deploy Github Pages"
         run: |
+          git config user.email="delphinerichard71@live.fr"
+          git config user.name="delphinerichard"
           npm run deploy

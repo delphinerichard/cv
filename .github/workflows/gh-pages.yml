@@ -30,8 +30,5 @@ jobs:
       # 3. Deploy on Github Pages
 
       - name: "Deploy Github Pages"
-        uses: delphinerichard/cv@1.0.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: web-build/
+        run: |
+          npm run deploy

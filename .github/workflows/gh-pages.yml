@@ -27,5 +27,4 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote set-url origin https://delphinerichard:${{PERSONNAL_ACCESS_TOKEN}}@github.com/delphinerichard/cv.git
           npm run deploy

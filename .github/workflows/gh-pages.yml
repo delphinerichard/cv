@@ -24,7 +24,5 @@ jobs:
       # 2. Deploy on Github Pages
 
       - name: "Deploy Github Pages"
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          npm run deploy
+        id: deployment
+        uses: actions/deploy-pages@v2 

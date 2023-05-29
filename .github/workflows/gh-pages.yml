@@ -30,7 +30,7 @@ jobs:
       # 3. Deploy on Github Pages
 
       - name: "Deploy Github Pages"
-        uses: delphinerichard/github-pages-deploy-action@3.7.1
+        uses: delphinerichard/cv
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages

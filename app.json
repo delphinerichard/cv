@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "cv",
+    "name": "CV",
     "slug": "cv",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,13 +15,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.delphinerichard.cv"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.delphinerichard.cv"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -31,6 +33,8 @@
         "projectId": "26959ae6-b6e4-434e-9450-e1146c02396e"
       }
     },
-    "owner": "brizo"
+    "owner": "brizo",
+    "description": "CV de Delphine RICHARD",
+    "githubUrl": "https://github.com/delphinerichard/cv.git"
   }
 }

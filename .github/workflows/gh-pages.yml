@@ -21,18 +21,11 @@ jobs:
         with:
           persist-credentials: false
 
-      # 2. npm install
-
-      - name: "Install node dependencies"
-        run: |
-          npm install
-
-      # 3. Deploy on Github Pages
+      # 2. Deploy on Github Pages
 
       - name: "Deploy Github Pages"
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git remote set-url origin https://delphinerichard:${{PERSONAL_ACCESS_TOKEN}}@github.com/delphinerichard/cv.git
           npm run deploy
-        with: 
-          token: $ {{ secrets.PERSONAL_ACCESS_TOKEN}}

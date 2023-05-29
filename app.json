@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "26959ae6-b6e4-434e-9450-e1146c02396e"
+      }
+    },
+    "owner": "brizo"
   }
 }
